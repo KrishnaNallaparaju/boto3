@@ -65,6 +65,36 @@ CORE CONCEPTS OF BOTO3:
  STEP2 :  Create a Resource Object or Client object.
  
  
+ ******************************************************************************************
+ 
+ CRETION OF A BOTO3 SESSION OBJECT 
+ ---------------------------------
+ 
+ * Session stores configaration information (primarily credentials of AWS root account or AWS IAM Useraccount and selected region )
+ * allows you to create resources and client objects thereby!
+ 
+ -> With Session Method 
+ -> Without Session Method
+ 
+ eg:  ( with session method )
+ --
+ import boto3
+ session_obj = boto3.Session(aws_access_key_id=ACCESS_KEY, aws_secret_access_key=SECRET_KEY, region_name=REGION_NAME)
+ #creating a resource
+ ec2_obj=session_obj.resource('ec2')
+ for instance in ec2_obj.instances.all():
+     print(instance)
+
+NEVER HOT CODE CREDENTIALS IN THE SCRIPT. 
+session_obj=boto3.Session(profile_name="default")
+
+**********************************************************************************************
+
+
+
+ 
+ 
+ 
  
  
  
