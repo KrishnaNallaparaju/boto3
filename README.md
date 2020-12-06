@@ -86,6 +86,7 @@ CORE CONCEPTS OF BOTO3:
      print(instance)
 
 NEVER HOT CODE CREDENTIALS IN THE SCRIPT. 
+
 session_obj=boto3.Session(profile_name="default")
 
 **********************************************************************************************
