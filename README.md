@@ -11,3 +11,5 @@ Following is the boto3 learning space and book keeping!
 
 *****  BOTOCORE is the basis for the AWS CLI which is also written in PYTHON
 
+****************************************************************************************
+
