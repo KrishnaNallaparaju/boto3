@@ -91,6 +91,18 @@ session_obj=boto3.Session(profile_name="default")
 
 **********************************************************************************************
 
+MANAGING AWS CREDENTIALS FOR DIFFERENT USERS:
+--------------------------------------------
+
+* with the help of profile name we can store multiple users credentials as below
+
+aws configure --profile aws-root
+
+aws configure --profile iam-user-s3
+
+**********************************************************************************************
+
+
 
 
  
