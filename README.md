@@ -40,10 +40,10 @@ CREDENTIALS MANAGEMENT:
 CORE CONCEPTS OF BOTO3:
 ----------------------
 
--> resource				: high level object to access AWS services ( Creating objects / dot operations )
--> client               : low-level object to access AWS services ( Any manipulations to the existing object / dictonary operations )
--> meta     			: helps to enter into client object from resource object
--> session              : object to connect with particular AWS account or IAM user account and initiate a SESSION.
--> 
+ resource				: high level object to access AWS services ( Creating objects / dot operations )
+ client               : low-level object to access AWS services ( Any manipulations to the existing object / dictonary operations )
+ meta     			: helps to enter into client object from resource object
+ session              : object to connect with particular AWS account or IAM user account and initiate a SESSION.
+ 
 
 
