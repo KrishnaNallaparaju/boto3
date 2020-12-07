@@ -1,9 +1,11 @@
 # boto3
 Following is the boto3 learning space and book keeping!
 
+FROM  :   https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
 * boto3 is the name of the python module and very helpful now as the python SDK for aws!
-*Open service
-*it allows you to directy create, modify or delete the AWS resources from your Python scripts!
+* Open service
+* it allows you to directy create, modify or delete the AWS resources from your Python scripts!
 
 ->  it's complicated in many ways but rich SDK for AWS
 
@@ -42,17 +44,17 @@ CORE CONCEPTS OF BOTO3:
 
  resource				: high level object to access AWS services ( Creating objects / dot operations )
  
- client      : low-level object to access AWS services ( Any manipulations to the existing object / dictonary operations )
+ client                 : low-level object to access AWS services ( Any manipulations to the existing object / dictonary operations )
  
- meta     			: helps to enter into client object from resource object
+ meta     		     	: helps to enter into client object from resource object
  
- session     : object to connect with particular AWS account or IAM user account and initiate a SESSION.
+ session                : object to connect with particular AWS account or IAM user account and initiate a SESSION.
  
- collections : a tool to iterate and manipulate groups of object resources ( example of "buckets" in s3 resource )
+ collections            : a tool to iterate and manipulate groups of object resources ( example of "buckets" in s3 resource )
  
- paginators  : automatic paging of responses ( to gatherer the complete info with API calls )
+ paginators             : automatic paging of responses ( to gatherer the complete info with API calls )
  
- waiters     : a way to block until a certain state has been reached.
+ waiters                : a way to block until a certain state has been reached.
  
  
  ******************************************************************************************
@@ -102,7 +104,28 @@ aws configure --profile iam-user-s3
 
 **********************************************************************************************
 
+EXTENDING OUR UNDERSTANDING OF BOTO3  VS   AWS Console
 
+Browser  -->  Boto3   #import boto3
+
+Login to management Console  -->  Session Object  #  sess_obj = boto3.Session(profile_name="default"
+
+Select a resource from management console  -->  resource object # res_obj=sess_obj.resource('ec2')  
+
+Now we can apply different methods over resource object ( like listing instances, creating new, deleting and so on....)
+
+************************************************************************************************
+
+BOTO3  Services Catalog:
+-----------------------
+
+Not every service will have the "resource" service but the "client" service will definitely be [present] acrosss all AWS services.
+
+BOTO3 document for displaying the Service Catalog :  
+
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/index.html
+
+************************************************************************************************
 
 
  
