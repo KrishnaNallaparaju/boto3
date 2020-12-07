@@ -105,6 +105,7 @@ aws configure --profile iam-user-s3
 **********************************************************************************************
 
 EXTENDING OUR UNDERSTANDING OF BOTO3  VS   AWS Console
+------------------------------------------------------
 
 Browser  -->  Boto3   #import boto3
 
